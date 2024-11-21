@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import { CORE_CONCEPTS as core } from "./coreData.js";
 import { EXAMPLES as sample } from "./coreExamples.js";
 
@@ -17,7 +17,8 @@ function App() {
   }
 
   return (
-    <div>
+    <Fragment>{//or shorthand Fragment <>
+      }
       <Header image={images.reactLoadingIMG}/>
       <main>
         <section id="core-concepts">
@@ -75,7 +76,7 @@ function App() {
             </div>)}
         </section>
       </main>
-    </div>
+    </Fragment>// </>
   );
 }
 
